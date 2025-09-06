@@ -1,0 +1,173 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.contact-btn {
+  color: #0d6efd;
+}
+
+/* Main Section */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 100px;
+  gap: 60px;
+}
+
+/* Left Image */
+.image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+  border: 4px solid #0d6efd;
+}
+
+/* Right Content */
+.content {
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.content h1 span {
+  color: #0d6efd;
+}
+
+.content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.role {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 2px;
+  background: #0d6efd;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Social Links */
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #0d6efd;
+}
+
+/* Button */
+.btn button {
+  background: #0d6efd;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background: #084298;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 60px 30px;
+  }
+
+  .image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .content h3 {
+    font-size: 18px;
+  }
+}
+
+
